@@ -1,12 +1,13 @@
-name: 'Dummy'
+name: 'Sample'
 
 on:
   workflow_dispatch:
 
 jobs:
-  dummy:
-    name: dummy
-    if: ${{ false }}
+  sample:
+    name: sample
     runs-on: ubuntu-latest
     steps:
-      - run: ""
+      - name: sample
+        run: |
+          echo "Sample"
